@@ -24,7 +24,10 @@ st.markdown(f"""<link rel="preconnect" href="https://fonts.googleapis.com">
 html,body,[class*="css"],.stApp{{font-family:"Roboto","Segoe UI",Arial,sans-serif!important;color:var(--text)!important}}
 .stApp{{background:var(--bg)}}
 .block-container{{max-width:1400px;padding:1.4rem 2.4rem 4rem}}
-#MainMenu,footer,header{{visibility:hidden}}
+#MainMenu,footer{{visibility:hidden}}
+header[data-testid="stHeader"]{{background:transparent!important;height:2.6rem}}
+header[data-testid="stHeader"] button{{color:var(--muted)!important}}
+header[data-testid="stHeader"] button:hover{{color:var(--text)!important;background:#272727!important}}
 /* ---- Top brand bar ---- */
 .brandbar{{display:flex;align-items:center;gap:.7rem;padding:0 0 1.1rem;margin-bottom:1.3rem;border-bottom:1px solid var(--line)}}
 .brandmark{{width:34px;height:34px;border-radius:8px;background:var(--red);display:flex;align-items:center;justify-content:center;flex-shrink:0}}
